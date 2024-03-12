@@ -1,0 +1,173 @@
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-avatar {
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.navbar-avatar img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+.main-content {
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+#userNameSpan {
+    color: #007bff; 
+}
+
+#welcomeText {
+    margin-bottom: 20px; 
+}
+
+.card,
+.add-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    margin-bottom: 20px;
+    background-color: #fff; /* Set background color to white */
+}
+.add-card{
+    cursor: pointer;
+    position: relative;
+
+}
+
+.card:hover,
+.add-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.active-card {
+    background-color: #cce5ff;
+    border: 2px solid #007bff;
+}
+
+.disabled-card {
+    background-color: #f8d7da;
+    border: 2px solid #dc3545;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        height: auto;
+        min-height: 300px; 
+    }
+    
+}
+
+.add-btn {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: #add8e6; /* Baby blue color */
+    color: #000; /* Black color for contrast */
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Move button to center */
+}
+
+.add-form {
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-form.active-form {
+    display: block;
+}
+.card-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+}
+
+.card-buttons button {
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #87CEFA; /* Baby blue color */
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-buttons button:hover {
+    background-color: #4682B4; /* Darker shade of blue on hover */
+}

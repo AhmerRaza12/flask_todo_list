@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container login-form-container">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+        <div class="form-container signup-form-container">
+            <h1>Sign Up</h1>
+            <form id="signupForm">
+                <input type="text" id="signupName" placeholder="Name" required>
+                <input type="text" id="signupUsername" placeholder="Username" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <label for="avatar" class="avatar-label">Choose Avatar:</label>
+                <div class="file-input-container">
+                    <input type="file" id="avatar" accept="image/*" class="avatar-input">
+                    <div class="file-input-button">Choose File</div>
+                </div>
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <button id="loginToggle" class="toggle-btn">Login</button>
+            <button id="signupToggle" class="toggle-btn">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>

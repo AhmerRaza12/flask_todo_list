@@ -1,0 +1,98 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+.file-input-container,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.blur {
+    filter: blur(5px);
+}
+
+.avatar-label {
+    margin-bottom: 5px;
+}
+
+.file-input-container {
+    position: relative;
+}
+
+.avatar-input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-input-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.file-input-button:hover {
+    background-color: #0056b3;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-btn {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}

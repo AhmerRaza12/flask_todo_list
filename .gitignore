@@ -1,0 +1,8 @@
+lib/
+Scripts/
+Include/
+pyvenv.cfg
+/lib/
+/Scripts/
+/Include/
+/pyvenv.cfg
